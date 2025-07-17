@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { FiSun, FiMoon } from "react-icons/fi";
+
 
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
@@ -34,7 +36,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-white/70 dark:bg-gray-900/70 backdrop-blur-md shadow-md">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-gray-800 dark:text-white">MyPortfolio</h1>
+        <h1 className="text-2xl font-bold text-gray-800 dark:text-white">Emmanuel AO</h1>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-sm font-medium">
@@ -42,7 +44,7 @@ export default function Navbar() {
           <a href="#projects" className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition">Projects</a>
           <a href="#contact" className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition">Contact</a>
           <button onClick={toggleDarkMode} className="ml-4 text-sm bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded hover:scale-105 transition">
-            {darkMode ? "☀️" : "🌙"}
+          {darkMode ? <FiSun className="w-5 h-5" /> : <FiMoon className="w-5 h-5" />}
           </button>
         </div>
 
@@ -59,7 +61,7 @@ export default function Navbar() {
           <a href="#projects" className="text-gray-700 dark:text-gray-300">Projects</a>
           <a href="#contact" className="text-gray-700 dark:text-gray-300">Contact</a>
           <button onClick={toggleDarkMode} className="text-sm bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded">
-            {darkMode ? "☀️" : "🌙"}
+          {darkMode ? <FiSun className="w-5 h-5" /> : <FiMoon className="w-5 h-5" />}
           </button>
         </div>
       )}
