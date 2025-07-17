@@ -1,9 +1,14 @@
-import './App.css'
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center">
-      <h1 className="text-4xl font-bold">Tailwind is Working 🎉</h1>
+    <div className="bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-100 min-h-screen">
+      <Navbar />
+      <main className="pt-20">
+        <section id="home" className="h-screen flex items-center justify-center">Home Section</section>
+        <section id="projects" className="h-screen flex items-center justify-center">Projects Section</section>
+        <section id="contact" className="h-screen flex items-center justify-center">Contact Section</section>
+      </main>
     </div>
   );
 }
