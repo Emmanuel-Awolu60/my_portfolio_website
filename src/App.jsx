@@ -2,11 +2,10 @@ import './App.css'
 
 function App() {
   return (
-    <div className="p-6 bg-black text-white text-4xl font-bold">
-    Tailwind Works!
-  </div>
-  
-  )
+    <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center">
+      <h1 className="text-4xl font-bold">Tailwind is Working 🎉</h1>
+    </div>
+  );
 }
 
-export default App
+export default App;
