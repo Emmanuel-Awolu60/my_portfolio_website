@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         
         {/* Left: Text */}
-        <div className="space-y-5">
+        <div className="space-y-5" data-aos="fade-right">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
             👋 Hi, I’m <span className="text-blue-600 dark:text-blue-400">Emmanuel</span>
           </h1>
@@ -25,7 +25,7 @@ export default function Hero() {
         </div>
 
         {/* Right: Image (Optional, replace src with yours) */}
-        <div className="hidden md:block">
+        <div className="hidden md:block" data-aos="zoom-in">
           <img
             src="https://avatars.githubusercontent.com/u/9919?v=4"
             alt="Profile"
