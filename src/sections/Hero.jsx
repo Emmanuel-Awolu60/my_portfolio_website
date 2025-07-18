@@ -8,7 +8,11 @@ export default function Hero() {
     >
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-center">
         {/* Left: Text */}
-        <div className="space-y-6">
+        <div
+          className="space-y-6"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white">
             👋Hi, I’m{" "}
             <span className="text-blue-600 dark:text-blue-400">
@@ -32,12 +36,22 @@ export default function Hero() {
         </div>
 
         {/* Right: Image */}
-        <div className="flex justify-center md:justify-end">
-          <img
-            src="https://avatars.githubusercontent.com/u/9919?v=4"
-            alt="Profile"
-            className="w-auto md:w-96 md:h-96 object-cover rounded-xl shadow-2xl border-4 border-blue-600"
-          />
+        <div
+          className="flex justify-center md:justify-end"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <a
+            href="https://github.com/Emmanuel-Awolu60"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://avatars.githubusercontent.com/u/9919?v=4"
+              alt="Profile"
+              className="w-auto md:w-96 md:h-96 object-cover rounded-xl shadow-2xl border-4 border-blue-600"
+            />
+          </a>
         </div>
       </div>
     </section>
