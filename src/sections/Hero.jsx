@@ -10,8 +10,10 @@ export default function Hero() {
         {/* Left: Text */}
         <div className="space-y-6">
           <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white">
-            👋 Hi, I’m{" "}
-            <span className="text-blue-600 dark:text-blue-400">Emmanuel</span>
+            👋Hi, I’m{" "}
+            <span className="text-blue-600 dark:text-blue-400">
+              Emmanuel AO
+            </span>
           </h1>
           <h2 className="text-2xl sm:text-3xl font-semibold text-gray-700 dark:text-gray-300">
             Full-Stack Web Developer
@@ -34,7 +36,7 @@ export default function Hero() {
           <img
             src="https://avatars.githubusercontent.com/u/9919?v=4"
             alt="Profile"
-            className="w-80 h-80 object-cover rounded-xl shadow-2xl border-4 border-blue-600"
+            className="w-auto md:w-96 md:h-96 object-cover rounded-xl shadow-2xl border-4 border-blue-600"
           />
         </div>
       </div>
