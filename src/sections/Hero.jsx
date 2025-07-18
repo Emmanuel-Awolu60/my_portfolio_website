@@ -6,7 +6,7 @@ export default function Hero() {
       id="home"
       className="min-h-screen flex items-center bg-white dark:bg-gray-950 px-6 py-16"
     >
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-center">
         {/* Left: Text */}
         <div className="space-y-6">
           <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white">
