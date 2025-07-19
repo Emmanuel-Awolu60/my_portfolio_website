@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="m-9 min-h-screen flex items-center bg-white dark:bg-gray-950 px-6 py-16"
+      className="min-h-screen flex items-center bg-white dark:bg-gray-950 px-6 py-16"
     >
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-center">
         {/* Left: Text */}
