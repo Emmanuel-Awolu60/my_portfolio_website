@@ -99,6 +99,18 @@ export default function Navbar() {
             Contact
           </ScrollLink>
 
+          <ScrollLink
+            to="about"
+            smooth={true}
+            duration={500}
+            className={`cursor-pointer ${
+              activeSection === "contact"
+                ? "text-blue-600 dark:text-blue-400"
+                : "text-gray-700 dark:text-gray-300"
+            } hover:text-blue-500 transition`}
+          >
+            About
+          </ScrollLink>
           <button
             onClick={toggleDarkMode}
             className="ml-4 text-sm bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded hover:scale-105 transition"

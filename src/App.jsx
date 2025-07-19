@@ -1,7 +1,7 @@
 import Hero from "./sections/Hero";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
-
+import Projects from "./components/Projects";
 function App() {
   return (
     <div className="bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-100 min-h-screen">
@@ -9,6 +9,7 @@ function App() {
       <main className="pt-20">
         <Hero />
         <About />
+        <Projects />
         <section
           id="home"
           className="h-screen flex items-center justify-center"
