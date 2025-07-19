@@ -6,7 +6,9 @@ import { Link as ScrollLink } from "react-scroll";
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
+  // Handle scroll spy to update active section
   useEffect(() => {
     const sections = ["home", "projects", "contact"];
 
@@ -19,7 +21,7 @@ export default function Navbar() {
         });
       },
       {
-        rootMargin: "-50% 0px -50% 0px", // Trigger when section is centered
+        rootMargin: "-50% 0px -50% 0px",
         threshold: 0.5,
       }
     );
@@ -32,6 +34,7 @@ export default function Navbar() {
     return () => observer.disconnect();
   }, []);
 
+  // Toggle dark mode
   const toggleDarkMode = () => {
     const root = window.document.documentElement;
     if (darkMode) {
@@ -49,10 +52,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          {" "}
-          {/* ALIGN ICON + TEXT */}
-          <FaCode className="w-6 h-6 text-blue-600 dark:text-blue-400" />{" "}
-          {/* Bigger + Colored */}
+          <FaCode className="w-6 h-6 text-blue-600 dark:text-blue-400" />
           <h1 className="text-2xl font-extrabold text-gray-800 dark:text-white tracking-wide">
             Emmanuel AO
           </h1>
@@ -60,14 +60,6 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 text-base font-semibold">
-          {" "}
-          {/* Bolder + Slightly larger */}
-          {/* <a
-            href="#home"
-            className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition"
-          >
-            Home
-          </a> */}
           <ScrollLink
             to="home"
             smooth={true}
@@ -80,18 +72,7 @@ export default function Navbar() {
           >
             Home
           </ScrollLink>
-          {/* <a
-            href="#projects"
-            className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition"
-          >
-            Projects
-          </a>
-          <a
-            href="#contact"
-            className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition"
-          >
-            Contact
-          </a> */}
+
           <ScrollLink
             to="projects"
             smooth={true}
@@ -104,6 +85,7 @@ export default function Navbar() {
           >
             Projects
           </ScrollLink>
+
           <ScrollLink
             to="contact"
             smooth={true}
@@ -116,6 +98,7 @@ export default function Navbar() {
           >
             Contact
           </ScrollLink>
+
           <button
             onClick={toggleDarkMode}
             className="ml-4 text-sm bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded hover:scale-105 transition"
@@ -128,7 +111,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile menu toggle */}
+        {/* Mobile Menu Toggle */}
         <button
           className="md:hidden text-gray-800 dark:text-white text-2xl font-bold"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -140,15 +123,23 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden flex flex-col items-center bg-white dark:bg-gray-900 py-4 space-y-3 font-semibold text-base">
-          <a href="#home" className="text-gray-700 dark:text-gray-300">
-            Home
-          </a>
-          <a href="#projects" className="text-gray-700 dark:text-gray-300">
-            Projects
-          </a>
-          <a href="#contact" className="text-gray-700 dark:text-gray-300">
-            Contact
-          </a>
+          {["home", "projects", "contact"].map((section) => (
+            <ScrollLink
+              key={section}
+              to={section}
+              smooth={true}
+              duration={500}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`cursor-pointer ${
+                activeSection === section
+                  ? "text-blue-600 dark:text-blue-400"
+                  : "text-gray-700 dark:text-gray-300"
+              }`}
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </ScrollLink>
+          ))}
+
           <button
             onClick={toggleDarkMode}
             className="text-sm bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded"
