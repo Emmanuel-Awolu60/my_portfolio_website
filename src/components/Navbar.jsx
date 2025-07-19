@@ -1,25 +1,35 @@
 import { useEffect, useState } from "react";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { FaCode } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Navbar() {
   const [darkMode, setDarkMode] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const root = window.document.documentElement;
-    const storedTheme = localStorage.getItem("theme");
+    const sections = ["home", "projects", "contact"];
 
-    if (
-      storedTheme === "dark" ||
-      (!storedTheme &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      root.classList.add("dark");
-      setDarkMode(true);
-    } else {
-      root.classList.remove("dark");
-    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: "-50% 0px -50% 0px", // Trigger when section is centered
+        threshold: 0.5,
+      }
+    );
+
+    sections.forEach((id) => {
+      const section = document.getElementById(id);
+      if (section) observer.observe(section);
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   const toggleDarkMode = () => {
@@ -52,13 +62,25 @@ export default function Navbar() {
         <div className="hidden md:flex space-x-8 text-base font-semibold">
           {" "}
           {/* Bolder + Slightly larger */}
-          <a
+          {/* <a
             href="#home"
             className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition"
           >
             Home
-          </a>
-          <a
+          </a> */}
+          <ScrollLink
+            to="home"
+            smooth={true}
+            duration={500}
+            className={`cursor-pointer ${
+              activeSection === "home"
+                ? "text-blue-600 dark:text-blue-400"
+                : "text-gray-700 dark:text-gray-300"
+            } hover:text-blue-500 transition`}
+          >
+            Home
+          </ScrollLink>
+          {/* <a
             href="#projects"
             className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition"
           >
@@ -69,7 +91,31 @@ export default function Navbar() {
             className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition"
           >
             Contact
-          </a>
+          </a> */}
+          <ScrollLink
+            to="projects"
+            smooth={true}
+            duration={500}
+            className={`cursor-pointer ${
+              activeSection === "projects"
+                ? "text-blue-600 dark:text-blue-400"
+                : "text-gray-700 dark:text-gray-300"
+            } hover:text-blue-500 transition`}
+          >
+            Projects
+          </ScrollLink>
+          <ScrollLink
+            to="contact"
+            smooth={true}
+            duration={500}
+            className={`cursor-pointer ${
+              activeSection === "contact"
+                ? "text-blue-600 dark:text-blue-400"
+                : "text-gray-700 dark:text-gray-300"
+            } hover:text-blue-500 transition`}
+          >
+            Contact
+          </ScrollLink>
           <button
             onClick={toggleDarkMode}
             className="ml-4 text-sm bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded hover:scale-105 transition"
