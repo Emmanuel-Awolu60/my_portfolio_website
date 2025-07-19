@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import { FaGithub } from "react-icons/fa";
+import { BiLinkExternal } from "react-icons/bi";
 
 const projects = [
   {
@@ -9,7 +10,6 @@ const projects = [
     description:
       "A markdown-powered note app built for developers with auto-saving, tagging, and dark mode.",
     tech: "React, Tailwind, Firebase",
-    icon: "<FaGithub />",
     github: "https://github.com/Emmanuel-Awolu60/devnotes",
     live: "https://devnotes.vercel.app/",
   },
@@ -60,13 +60,14 @@ const Projects = () => {
             </h3>
             <p className="text-gray-600 mb-3">{project.description}</p>
             <p className="text-sm mb-4 text-gray-500">Tech: {project.tech}</p>
-            <div className="flex gap-4">
+            <div className="flex gap-6 mt-4">
               <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline text-sm"
+                className="flex items-center gap-2 text-sm text-blue-600 hover:underline"
               >
+                <FaGithub className="text-lg" />
                 GitHub
               </a>
               {project.live !== "#" && (
@@ -74,8 +75,9 @@ const Projects = () => {
                   href={project.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-green-600 hover:underline text-sm"
+                  className="flex items-center gap-2 text-sm text-green-600 hover:underline"
                 >
+                  <BiLinkExternal className="text-lg" />
                   Live Demo
                 </a>
               )}
