@@ -74,6 +74,19 @@ export default function Navbar() {
           </ScrollLink>
 
           <ScrollLink
+            to="about"
+            smooth={true}
+            duration={500}
+            className={`cursor-pointer ${
+              activeSection === "contact"
+                ? "text-blue-600 dark:text-blue-400"
+                : "text-gray-700 dark:text-gray-300"
+            } hover:text-blue-500 transition`}
+          >
+            About
+          </ScrollLink>
+
+          <ScrollLink
             to="projects"
             smooth={true}
             duration={500}
@@ -97,19 +110,6 @@ export default function Navbar() {
             } hover:text-blue-500 transition`}
           >
             Contact
-          </ScrollLink>
-
-          <ScrollLink
-            to="about"
-            smooth={true}
-            duration={500}
-            className={`cursor-pointer ${
-              activeSection === "contact"
-                ? "text-blue-600 dark:text-blue-400"
-                : "text-gray-700 dark:text-gray-300"
-            } hover:text-blue-500 transition`}
-          >
-            About
           </ScrollLink>
           <button
             onClick={toggleDarkMode}

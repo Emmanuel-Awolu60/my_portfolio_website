@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import { FaGithub } from "react-icons/fa";
 import { BiLinkExternal } from "react-icons/bi";
+import { zoomIn } from "../utils/motion";
 
 const projects = [
   {
@@ -49,7 +50,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            variants={fadeIn("up", "spring", index * 0.3, 0.6)}
+            variants={zoomIn(index * 0.2, 0.6)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.3 }}

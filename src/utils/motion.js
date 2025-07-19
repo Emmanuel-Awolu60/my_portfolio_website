@@ -23,3 +23,20 @@ export const fadeIn = (
     },
   };
 };
+
+export const zoomIn = (delay = 0.1, duration = 0.6) => ({
+  hidden: {
+    scale: 0.8,
+    opacity: 0,
+  },
+  show: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      delay,
+      duration,
+      bounce: 0.3,
+    },
+  },
+});
