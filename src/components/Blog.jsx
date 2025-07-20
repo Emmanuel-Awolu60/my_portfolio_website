@@ -7,28 +7,28 @@ const blogPosts = [
     title: "Mastering Backend with Python: What I Wish I Knew Earlier",
     excerpt:
       "I walk you through what I learned building APIs from scratch with Python and real lessons that changed my workflow...",
-    cover: "./public/img/python.jpg",
+    cover: "/img/python.jpg",
     url: "https://emmanuelao.hashnode.dev/mastering-backend-with-python",
   },
   {
     title: "10 Underrated Tools I Use Daily as a Developer",
     excerpt:
       "Beyond VS Code and GitHub, these are tools I can’t live without when building or writing code...",
-    cover: "./public/img/tools.jpg",
+    cover: "/img/tools.jpg",
     url: "https://emmanuelao.hashnode.dev/underrated-dev-tools",
   },
   {
     title: "My 30-Day Tech Content Challenge: Lessons from Writing Daily",
     excerpt:
       "Here’s how writing every day changed my thinking, my reach, and how I now plan content...",
-    cover: "./public/img/writing.jpg",
+    cover: "/img/writing.jpg",
     url: "https://emmanuelao.hashnode.dev/30-day-content-challenge",
   },
   {
     title: "How to Build an API Project from Scratch (with GitHub Commits)",
     excerpt:
       "I broke down every commit while building my Link Tracking API, so you can follow and learn easily...",
-    cover: "./public/img/api.jpg",
+    cover: "/img/api.jpg",
     url: "https://emmanuelao.hashnode.dev/build-api-from-scratch",
   },
 ];
