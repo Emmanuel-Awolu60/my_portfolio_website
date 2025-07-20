@@ -25,9 +25,9 @@ export default function Hero() {
               Full-Stack Web Developer
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-xl">
-              I build fast, responsive, and modern web applications using React,
-              Tailwind, Node.js, and Express. I care deeply about clean code and
-              good UI.
+              I build fast, responsive, and modern web applications using
+              React.js, Tailwind.css, Node.js, Express and Python. I care deeply
+              about clean code and good UI.
             </p>
             <a
               href="#projects"

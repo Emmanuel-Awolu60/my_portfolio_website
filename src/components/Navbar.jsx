@@ -113,7 +113,7 @@ export default function Navbar() {
           </ScrollLink>
           <button
             onClick={toggleDarkMode}
-            className="ml-4 text-sm bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded hover:scale-105 transition"
+            // className="ml-4 text-sm bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded hover:scale-105 transition"
           >
             {darkMode ? (
               <FiSun className="w-5 h-5" />
