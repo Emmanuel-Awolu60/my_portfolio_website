@@ -149,7 +149,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden flex flex-col items-center bg-white dark:bg-gray-900 py-4 space-y-3 font-semibold text-base">
-          {["home", "projects", "contact"].map((section) => (
+          {["home", "about", "projects", "contact", "blog"].map((section) => (
             <ScrollLink
               key={section}
               to={section}
