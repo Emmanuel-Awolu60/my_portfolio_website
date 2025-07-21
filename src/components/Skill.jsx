@@ -8,7 +8,7 @@ import FadeInSection from "../utils/FadeInSection"; // 👈 Make sure path is co
 
 const skills = [
   // FRONTEND SKILLS
-  { name: "HTML5", logo: "/logos/html.svg" },
+  { name: "HTML5", logo: "/logos/html5.svg" },
   { name: "CSS3", logo: "/logos/css.svg" },
   { name: "JavaScript(ES6+)", logo: "/logos/javascript.svg" },
   { name: "TypeScript", logo: "/logos/typescript.svg" },
@@ -22,9 +22,9 @@ const skills = [
   { name: "Django", logo: "/logos/django.svg" },
   { name: "PostgreSQL", logo: "/logos/postgresql.svg" },
   { name: "MongoDB", logo: "/logos/mongodb.svg" },
-  { name: "RESTful API", logo: "/logos/restapi.svg" },
+  //   { name: "RESTful API", logo: "/logos/restapi.svg" },
   { name: "GraphQL", logo: "/logos/graphql.svg" },
-  { name: "WebSockets", logo: "/logos/websocket.svg" },
+  //   { name: "WebSockets", logo: "/logos/websocket.svg" },
   { name: "Docker", logo: "/logos/docker.svg" },
   { name: "Postman", logo: "/logos/postman.svg" },
 ];
