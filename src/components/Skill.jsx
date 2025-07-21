@@ -7,14 +7,26 @@ import FadeInSection from "../utils/FadeInSection"; // 👈 Make sure path is co
 // import FadeInSection from "./FadeInSection";
 
 const skills = [
-  { name: "React", logo: "/logos/react.svg" },
+  // FRONTEND SKILLS
+  { name: "HTML5", logo: "/logos/html.svg" },
+  { name: "CSS3", logo: "/logos/css.svg" },
+  { name: "JavaScript(ES6+)", logo: "/logos/javascript.svg" },
+  { name: "TypeScript", logo: "/logos/typescript.svg" },
+  { name: "React.js", logo: "/logos/react.svg" },
   { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
   { name: "Node.js", logo: "/logos/nodejs.svg" },
-  { name: "Express", logo: "/logos/express.svg" },
-  { name: "MongoDB", logo: "/logos/mongodb.svg" },
-  { name: "JavaScript", logo: "/logos/javascript.svg" },
   { name: "Git", logo: "/logos/git.svg" },
-  { name: "Figma", logo: "/logos/figma.svg" },
+  // BACKEND SKILLS
+  { name: "Python", logo: "/logos/python.svg" },
+  { name: "Express", logo: "/logos/express.svg" },
+  { name: "Django", logo: "/logos/django.svg" },
+  { name: "PostgreSQL", logo: "/logos/postgresql.svg" },
+  { name: "MongoDB", logo: "/logos/mongodb.svg" },
+  { name: "RESTful API", logo: "/logos/restapi.svg" },
+  { name: "GraphQL", logo: "/logos/graphql.svg" },
+  { name: "WebSockets", logo: "/logos/websocket.svg" },
+  { name: "Docker", logo: "/logos/docker.svg" },
+  { name: "Postman", logo: "/logos/postman.svg" },
 ];
 
 const Skills = () => {
@@ -46,7 +58,7 @@ const Skills = () => {
                     <img
                       src={tool.logo}
                       alt={tool.name}
-                      className="h-16 w-16 object-contain grayscale hover:grayscale-0 transition duration-300"
+                      className="h-16 w-16 object-contain"
                     />
                     <p className="mt-2 text-gray-200 text-sm">{tool.name}</p>
                   </div>

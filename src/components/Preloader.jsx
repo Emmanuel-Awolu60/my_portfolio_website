@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import { SiCodingninjas } from "react-icons/si";
+// import { SiCodingninjas } from "react-icons/si";
+import { FaCode } from "react-icons/fa";
 
 const Preloader = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -34,7 +35,8 @@ const Preloader = () => {
             }}
             className="flex flex-col items-center gap-2"
           >
-            <SiCodingninjas className="text-9xl  animate-spinSlow" />
+            {/* <SiCodingninjas className="text-9xl  animate-spinSlow" /> */}
+            <FaCode className="text-9xl  animate-spinSlow" />
             <span className="text-xl font-semibold tracking-wider text-white/90">
               {/* Emmanuel AO */}
             </span>

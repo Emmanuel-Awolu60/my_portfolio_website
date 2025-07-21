@@ -14,39 +14,11 @@ const Footer = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="bg-[#0f0f0f]/80 backdrop-blur-lg py-8 px-4 sm:px-6 md:px-10 rounded-t-3xl border-t border-white/10"
+        className="bg-[#0f0f0f]/80 backdrop-blur-lg py-8 px-4 sm:px-6 md:px-10 border-t border-white/10"
       >
         <div className="max-w-6xl mx-auto text-center space-y-6 sm:space-y-5">
-          {/* Social Icons */}
-          <div className="flex justify-center gap-6 sm:gap-4 text-2xl sm:text-xl">
-            <a
-              href="https://github.com/emmanuelao"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-500 transition"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://twitter.com/emmanuelao"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-400 transition"
-            >
-              <FaTwitter />
-            </a>
-            <a
-              href="https://linkedin.com/in/emmanuelao"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-300 transition"
-            >
-              <FaLinkedin />
-            </a>
-          </div>
-
           {/* Copyright */}
-          <p className="text-gray-400 text-sm sm:text-xs px-4 sm:px-0">
+          <p className="text-gray-400 text-sm sm:text-base px-4 sm:px-0">
             &copy; {new Date().getFullYear()} Emmanuel Awolu. All rights
             reserved.
           </p>
@@ -54,7 +26,7 @@ const Footer = () => {
           {/* Back to Top */}
           <button
             onClick={scrollToTop}
-            className="mt-2 text-sm sm:text-xs text-blue-500 hover:underline transition"
+            className="mt-2 text-sm sm:text-base text-blue-500 hover:underline transition"
           >
             Back to Top ↑
           </button>

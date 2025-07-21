@@ -26,8 +26,8 @@ export default function Hero() {
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-xl">
               I build fast, responsive, and modern web applications using
-              React.js, Tailwind.css, Node.js, Express and Python. I care deeply
-              about clean code and good UI.
+              React.js, Tailwind.css, Node.js, Express, TypeScript and Python. I
+              care deeply about clean code and good UI.
             </p>
             <a
               href="#projects"

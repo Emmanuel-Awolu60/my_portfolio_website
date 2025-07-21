@@ -86,6 +86,18 @@ const Projects = () => {
           </motion.div>
         ))}
       </div>
+
+      <div className="mt-10 text-center">
+        <a
+          href="https://emmanuelao.hashnode.dev/"
+          target="_blank"
+          rel="noopener noreferrer"
+          // className="inline-block bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700 transition"
+          className="inline-block text-blue-600 py-2 px-6 transition"
+        >
+          View All Projects →
+        </a>
+      </div>
     </section>
   );
 };
