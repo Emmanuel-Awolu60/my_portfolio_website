@@ -43,19 +43,20 @@ export default function Hero() {
           data-aos="fade-left"
           data-aos-duration="1000"
         >
-          <a
+          {/* <a
             href="https://github.com/Emmanuel-Awolu60"
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <FadeInSection delay={0.2}>
-              <img
-                src="https://avatars.githubusercontent.com/u/9919?v=4"
-                alt="Profile"
-                className="w-auto md:w-96 md:h-96 object-cover rounded-xl shadow-2xl border-4 border-blue-600"
-              />
-            </FadeInSection>
-          </a>
+          > */}
+          <FadeInSection delay={0.2}>
+            <img
+              // src="https://avatars.githubusercontent.com/u/9919?v=4"
+              src="/img/hero.jpg"
+              alt="Profile"
+              className="w-auto md:w-96 md:h-96 object-cover rounded-xl shadow-2xl border-4 border-blue-600"
+            />
+          </FadeInSection>
+          {/* </a> */}
         </div>
       </div>
     </section>

@@ -89,7 +89,7 @@ const Projects = () => {
 
       <div className="mt-10 text-center">
         <a
-          href="https://emmanuelao.hashnode.dev/"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
           // className="inline-block bg-blue-600 text-white py-2 px-6 rounded hover:bg-blue-700 transition"
