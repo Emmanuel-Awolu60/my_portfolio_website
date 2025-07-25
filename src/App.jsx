@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Hero from "./sections/Hero";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
+import Services from "./sections/Services";
 // import ProjectCard from "./components/ProjectCard";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
@@ -29,6 +30,7 @@ function App() {
           <main className="pt-20">
             <Hero />
             <About />
+            <Services />
             <Projects />
             <Skills />
             <Blog />
