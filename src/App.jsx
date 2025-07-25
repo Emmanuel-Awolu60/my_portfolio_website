@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+
 import Hero from "./sections/Hero";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
-import Projects from "./components/Projects";
+// import ProjectCard from "./components/ProjectCard";
+import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Skills from "./components/Skill";
 import Blog from "./components/Blog";
@@ -13,7 +15,7 @@ function App() {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowContent(true), 2000); // 2s fake loading
+    const timer = setTimeout(() => setShowContent(true), 2000);
     return () => clearTimeout(timer);
   }, []);
 
