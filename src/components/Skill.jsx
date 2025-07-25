@@ -8,24 +8,24 @@ import FadeInSection from "../utils/FadeInSection";
 
 const skills = [
   // FRONTEND SKILLS
-  { name: "HTML5", logo: "/logos/html5.svg" },
-  { name: "CSS3", logo: "/logos/css.svg" },
-  { name: "JavaScript(ES6+)", logo: "/logos/javascript.svg" },
-  { name: "TypeScript", logo: "/logos/typescript.svg" },
-  { name: "React.js", logo: "/logos/react.svg" },
+  { name: "HTML5", logo: "/logos/html5.png" },
+  { name: "CSS3", logo: "/logos/css.png" },
+  { name: "JavaScript(ES6+)", logo: "/logos/js.png" },
+  { name: "TypeScript", logo: "/logos/typescript.png" },
+  { name: "React.js", logo: "/logos/react.png" },
   { name: "Tailwind", logo: "/logos/tailwindcss.svg" },
   { name: "Node.js", logo: "/logos/nodejs.svg" },
   { name: "Git", logo: "/logos/git.svg" },
   // BACKEND SKILLS
-  { name: "Python", logo: "/logos/python.svg" },
+  { name: "Python", logo: "/logos/python.png" },
   { name: "Express", logo: "/logos/express.svg" },
   { name: "Django", logo: "/logos/django.svg" },
-  { name: "PostgreSQL", logo: "/logos/postgresql.svg" },
+  { name: "PostgreSQL", logo: "/logos/postgre.png" },
   { name: "MongoDB", logo: "/logos/mongodb.svg" },
   //   { name: "RESTful API", logo: "/logos/restapi.svg" },
   { name: "GraphQL", logo: "/logos/graphql.svg" },
-  //   { name: "WebSockets", logo: "/logos/websocket.svg" },
-  { name: "Docker", logo: "/logos/docker.svg" },
+  { name: "WebSockets", logo: "/logos/ws.png" },
+  { name: "Docker", logo: "/logos/docker.png" },
   { name: "Postman", logo: "/logos/postman.svg" },
 ];
 
