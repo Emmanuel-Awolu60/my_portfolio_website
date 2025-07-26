@@ -105,40 +105,44 @@ export default function Navbar() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: 50 }}
-            transition={{ duration: 0.3 }}
-            className="md:hidden fixed top-[100%] right-0 w-72 h-screen bg-white dark:bg-gray-900 px-6 py-6 shadow-2xl z-50 text-left"
-            // className="md:hidden absolute top-[100%] right-0 w-64 h-screen bg-white/10 dark:bg-gray-900/20 backdrop-blur-md border-l border-white/20 dark:border-gray-700 px-6 py-8 space-y-4 shadow-lg z-50"
+            transition={{ duration: 0.4 }}
+            className="md:hidden absolute top-[100%] right-0 w-64 h-screen bg-white dark:bg-gray-900 px-6 py-8 space-y-4 shadow-lg z-50 overflow-hidden"
           >
-            {/* Nav Links with Icons */}
-            <div className="flex flex-col gap-5 text-right text-lg font-semibold">
-              {[
-                { id: "home", icon: <FaHome /> },
-                { id: "about", icon: <FaLaptopFile /> },
-                { id: "projects", icon: <FaTools /> },
-                { id: "blog", icon: <TbWriting /> },
-                { id: "contact", icon: <IoIosContact /> },
-              ].map(({ id, icon }) => (
-                <ScrollLink
-                  key={id}
-                  to={id}
-                  smooth={true}
-                  duration={500}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className={`capitalize flex  items-center gap-2 ${
-                    activeSection === id
-                      ? "text-blue-600 dark:text-blue-400"
-                      : "text-gray-800 dark:text-gray-300"
-                  } hover:text-blue-500 dark:hover:text-blue-300 transition`}
-                >
-                  <span>{id}</span> <span>{icon}</span>
-                </ScrollLink>
-              ))}
+            {/* Background Slide-in Image */}
+            <motion.img
+              src="/your-background-image.svg" // Place the SVG in your public folder
+              alt="Menu background"
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 0.05 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+            />
+
+            {/* Overlay content */}
+            <div className="relative z-10 flex flex-col gap-4">
+              {["home", "about", "projects", "blog", "contact"].map(
+                (section) => (
+                  <ScrollLink
+                    key={section}
+                    to={section}
+                    smooth={true}
+                    duration={500}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`capitalize tracking-wide font-semibold flex items-center gap-2 ${
+                      activeSection === section
+                        ? "text-blue-600 dark:text-blue-400"
+                        : "text-gray-800 dark:text-gray-300"
+                    } hover:text-blue-500 dark:hover:text-blue-300 transition`}
+                  >
+                    <span>•</span> {section}
+                  </ScrollLink>
+                )
+              )}
             </div>
 
-            {/* Dark Mode Toggle */}
             <button
               onClick={toggleDarkMode}
-              className="mt-6 flex items-center gap-2 bg-gray-100 dark:bg-gray-800 px-4 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition "
+              className="relative z-10 mt-6 flex items-center gap-2 bg-gray-100 dark:bg-gray-800 px-4 py-2 rounded-md hover:bg-gray-200 dark:hover:bg-gray-700 transition"
             >
               {darkMode ? (
                 <>
