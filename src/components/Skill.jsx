@@ -16,7 +16,7 @@ const skillGroups = [
         use: "Styling and responsive design",
       },
       {
-        name: "JavaScript(ES6+)",
+        name: "JavaScript",
         logo: "/logos/js.png",
         use: "Dynamic functionality",
       },

@@ -11,6 +11,7 @@ import Skills from "./components/Skill";
 import Blog from "./components/Blog";
 import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
+import FAQ from "./components/FAQ";
 
 function App() {
   const [showContent, setShowContent] = useState(false);
@@ -34,6 +35,7 @@ function App() {
             <Projects />
             <Skills />
             <Blog />
+            <FAQ />
             <Contact />
             <Footer />
           </main>
