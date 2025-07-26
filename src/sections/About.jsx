@@ -16,20 +16,31 @@ export default function About() {
       id="about"
       className="relative py-24 bg-white dark:bg-gray-900 overflow-hidden"
     >
-      {/* Background SVG Blob */}
-      <div className="absolute top-[-100px] left-[-100px] w-[500px] h-[500px] z-0 opacity-20">
-        <svg
+      {/* Animated Blob Background */}
+      <motion.div
+        className="absolute top-[-100px] left-[-100px] w-[500px] h-[500px] z-0 opacity-20"
+        animate={{
+          scale: [1, 1.1, 1],
+          rotate: [0, 10, -10, 0],
+        }}
+        transition={{
+          duration: 12,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      >
+        <motion.svg
           viewBox="0 0 200 200"
           xmlns="http://www.w3.org/2000/svg"
           className="w-full h-full"
         >
-          <path
+          <motion.path
             fill="#6366f1"
             d="M37.3,-66.2C48.9,-58.7,58.9,-48.5,65.4,-36.4C71.9,-24.3,74.9,-10.1,72.8,2.7C70.6,15.5,63.4,27,55.1,39.7C46.8,52.3,37.5,66.2,24.9,70.8C12.3,75.4,-3.6,70.7,-17.4,64C-31.2,57.3,-42.8,48.6,-52.4,37.1C-62.1,25.5,-69.7,11.2,-71.3,-4C-72.9,-19.2,-68.4,-35.4,-57.9,-44.2C-47.4,-53,-30.8,-54.5,-16.1,-60.4C-1.3,-66.3,11.5,-76.6,24.5,-76.5C37.4,-76.5,49.7,-66.1,37.3,-66.2Z"
             transform="translate(100 100)"
           />
-        </svg>
-      </div>
+        </motion.svg>
+      </motion.div>
 
       {/* Text Content */}
       <motion.div
@@ -60,14 +71,48 @@ export default function About() {
           execution and elegant code. I'm currently open to freelance and
           collaboration opportunities.
         </p>
-
+        {/* 
         <a
           href="/Emmanuel-Awolu-Resume.pdf"
           download
           className="inline-block bg-indigo-600 text-white py-2 px-6 rounded-lg shadow hover:bg-indigo-700 transition"
         >
           Download Resume
+        </a> */}
+
+        <a
+          href="/Emmanuel-Awolu-Resume.pdf"
+          download
+          className="relative inline-block bg-indigo-600 text-white py-2 px-6 rounded-lg shadow hover:bg-indigo-700 transition overflow-hidden group"
+        >
+          <span className="relative z-10">Download Resume</span>
+          <span className="absolute top-0 left-[-75%] w-[50%] h-full bg-white opacity-20 transform rotate-45 group-hover:translate-x-[250%] transition-all duration-700 ease-in-out"></span>
         </a>
+      </motion.div>
+
+      <motion.div
+        className="absolute bottom-[-100px] right-[-80px] w-[300px] h-[300px] z-0 opacity-10"
+        animate={{
+          scale: [1, 1.15, 1],
+          rotate: [0, -15, 15, 0],
+        }}
+        transition={{
+          duration: 16,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      >
+        <motion.svg
+          viewBox="0 0 200 200"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-full"
+        >
+          <motion.path
+            fill="#ec4899" // pink
+            d="M43.4,-75.7C54.9,-66.3,63.3,-54.2,66.9,-41.6C70.5,-29,69.3,-15.9,66.4,-4.1C63.5,7.7,58.9,15.5,54.3,27.2C49.6,38.9,44.9,54.5,34.2,64.3C23.6,74.2,6.8,78.4,-6.7,74.4C-20.2,70.5,-30.3,58.3,-42.4,47.6C-54.5,36.9,-68.6,27.7,-73.6,15.2C-78.5,2.6,-74.4,-13.3,-65.3,-27.6C-56.1,-41.8,-41.9,-54.4,-27.3,-62.2C-12.7,-70.1,2.2,-73.2,17.1,-75.7C32,-78.1,46.9,-80.9,43.4,-75.7Z"
+            transform="translate(100 100)"
+          />
+        </motion.svg>
       </motion.div>
     </section>
   );
