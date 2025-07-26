@@ -3,7 +3,7 @@ import { TbWriting } from "react-icons/tb";
 import { FaLaptopCode } from "react-icons/fa6";
 import { BiGlobe } from "react-icons/bi";
 import { MdOutlineBrush } from "react-icons/md";
-
+import { FaChartLine } from "react-icons/fa";
 const services = [
   {
     title: "Full-Stack Web Development",
@@ -24,10 +24,10 @@ const services = [
     icon: <BiGlobe />,
   },
   {
-    title: "Technical Writing",
+    title: "SEO",
     description:
-      "Writing beginner-friendly, SEO-optimized blog posts and documentation on web development topics.",
-    icon: <TbWriting />,
+      "Driving your business to Google's first pages is what we do best. Our rich SEO technique will shoot your websites to the top in few weeks!",
+    icon: <FaChartLine />,
   },
 ];
 
