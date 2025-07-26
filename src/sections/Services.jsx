@@ -4,6 +4,7 @@ import { FaLaptopCode } from "react-icons/fa6";
 import { BiGlobe } from "react-icons/bi";
 import { MdOutlineBrush } from "react-icons/md";
 import { FaChartLine } from "react-icons/fa";
+
 const services = [
   {
     title: "Full-Stack Web Development",
@@ -63,9 +64,15 @@ const Services = () => {
             viewport={{ once: true }}
             className="group bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-xl hover:shadow-2xl border border-gray-200 dark:border-gray-800 transform hover:-translate-y-2 transition-all duration-300"
           >
-            <div className="w-14 h-14 rounded-full flex items-center justify-center text-white text-2xl mb-4 bg-blue-600 group-hover:scale-110 transition">
+            {/* Icon with rotation and glow on hover */}
+            <motion.div
+              whileHover={{ rotate: 360 }}
+              transition={{ duration: 0.8 }}
+              className="w-14 h-14 rounded-full flex items-center justify-center text-white text-2xl mb-4 bg-blue-600 group-hover:shadow-[0_0_20px_rgba(37,99,235,0.7)] transition-all duration-300"
+            >
               {service.icon}
-            </div>
+            </motion.div>
+
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
               {service.title}
             </h3>
