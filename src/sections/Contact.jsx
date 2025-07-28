@@ -68,7 +68,7 @@ const Contact = () => {
               <div className="flex items-start gap-4">
                 <FaPhoneAlt className="mt-1 text-blue-600" />
                 <span className="text-gray-900 dark:text-white font-medium">
-                  +234-706-095-7515
+                  +234-906-520-6102
                 </span>
               </div>
               <div className="flex items-start gap-4">
@@ -111,7 +111,7 @@ const Contact = () => {
                   <FaXTwitter />
                 </a>
                 <a
-                  href="https://instagram.com/your-handle"
+                  href="https://instagram.com/the_emmanuelao"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-600 transition"
