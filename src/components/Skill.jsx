@@ -48,7 +48,7 @@ const Skills = () => {
 
         <div className="space-y-20">
           {skillGroups.map((group, i) => (
-            <FadeInSection key={i}>
+            <FadeInSection key={i} delay={i * 0.2}>
               <div>
                 <h3 className="text-2xl font-semibold text-gray-800 dark:text-white mb-6 text-left">
                   {group.title}
@@ -56,22 +56,23 @@ const Skills = () => {
 
                 <div className="flex gap-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-6">
                   {group.skills.map((skill, j) => (
-                    <div
-                      key={j}
-                      className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-5 rounded-2xl shadow-md hover:shadow-lg transition duration-300 min-w-[200px] snap-center"
-                    >
-                      <img
-                        src={skill.logo}
-                        alt={skill.name}
-                        className="w-12 h-12 mb-4 object-contain"
-                      />
-                      <h4 className="text-lg font-semibold text-gray-800 dark:text-white">
-                        {skill.name}
-                      </h4>
-                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                        {skill.use}
-                      </p>
-                    </div>
+                    <FadeInSection key={j} delay={j * 0.1}>
+                      <div
+                        className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-5 rounded-2xl shadow-md hover:shadow-lg transition duration-300 min-w-[200px] snap-center"
+                      >
+                        <img
+                          src={skill.logo}
+                          alt={skill.name}
+                          className="w-12 h-12 mb-4 object-contain"
+                        />
+                        <h4 className="text-lg font-semibold text-gray-800 dark:text-white">
+                          {skill.name}
+                        </h4>
+                        <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                          {skill.use}
+                        </p>
+                      </div>
+                    </FadeInSection>
                   ))}
                 </div>
               </div>

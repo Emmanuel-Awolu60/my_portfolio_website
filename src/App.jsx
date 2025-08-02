@@ -12,6 +12,7 @@ import Blog from "./components/Blog";
 import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
 import FAQ from "./components/FAQ";
+import SidebarNav from "./components/SidebarNav"
 
 function App() {
   const [showContent, setShowContent] = useState(false);
@@ -27,6 +28,7 @@ function App() {
         <Preloader />
       ) : (
         <div className="bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-100 min-h-screen">
+          {/* <SidebarNav /> */}
           <Navbar />
           <main className="pt-20">
             <Hero />
