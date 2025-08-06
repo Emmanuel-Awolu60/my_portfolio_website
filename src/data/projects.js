@@ -8,11 +8,11 @@ const projects = [
     live: "https://devnotes.vercel.app/",
   },
   {
-    title: "Portfolio Website",
+    title: "Link Sage",
     description:
-      "This very website — built to showcase my projects, skills, and blog content.",
+      "Linksage is a backend API developed in Python for efficient link shortening and analytics. It enables users to shorten URLs and access detailed usage statistics, all through a robust backend system.",
     tech: "React, Tailwind, Framer Motion",
-    github: "https://github.com/Emmanuel-Awolu60/my_portfolio_website",
+    github: "https://github.com/Emmanuel-Awolu60/LinkSage",
     live: "#",
   },
   {
