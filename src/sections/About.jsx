@@ -81,7 +81,7 @@ export default function About() {
         </a> */}
 
         <a
-          href="/Emmanuel-Awolu-Resume.pdf"
+          href="/public/eao-cv.pdf"
           download
           className="relative inline-block bg-indigo-600 text-white py-2 px-6 rounded-lg shadow hover:bg-indigo-700 transition overflow-hidden group"
         >
