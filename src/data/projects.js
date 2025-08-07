@@ -4,7 +4,7 @@ const projects = [
     description:
       "A markdown-powered note app built for developers with auto-saving, tagging, and dark mode.",
     tech: "React, Tailwind, Firebase",
-    github: "https://github.com/Emmanuel-Awolu60/devnotes",
+    // github: "https://github.com/Emmanuel-Awolu60/devnotes",
     live: "https://devnotes.vercel.app/",
   },
   {
@@ -21,7 +21,7 @@ const projects = [
       "A markdown-powered note app built for developers with auto-saving, tagging, and dark mode.",
     tech: "React, Tailwind, Firebase",
     github: "https://github.com/Emmanuel-Awolu60/devnotes",
-    live: "https://devnotes.vercel.app/",
+    live: "https://dx1-foodplug.netlify.app/",
   },
   {
     title: "Portfolio Website",

@@ -45,7 +45,7 @@ export default function Navbar() {
   const navLinks = ["home", "about", "projects", "blog", "contact"];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-white/60 dark:bg-gray-900/60 backdrop-blur-md shadow-sm border-b border-gray-200 dark:border-gray-800 transition">
+    <nav className="fixed top-0 left-0 w-full p-2 z-50 bg-white/60 dark:bg-gray-900/60 backdrop-blur-md shadow-sm border-b border-gray-200 dark:border-gray-800 transition">
       <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2">
