@@ -18,7 +18,7 @@ const projects = [
   {
     title: "DevNotes",
     description:
-      "A markdown-powered note app built for developers with auto-saving, tagging, and dark mode.",
+      "We offer 6 delicious, from basic cheese and basil and pizza ($6) to our signature classic pizzeria ('Taverne').....",
     tech: "React, Tailwind, Firebase",
     github: "https://github.com/Emmanuel-Awolu60/devnotes",
     live: "https://dx1-foodplug.netlify.app/",
