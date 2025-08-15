@@ -20,11 +20,11 @@ const blogPosts = [
     url: "https://emmanuelao.hashnode.dev/10-developer-tools-i-couldnt-work-without-that-hardly-anyone-talks-about",
   },
   {
-    title: "My 30-Day Tech Content Challenge: Lessons from Writing Daily",
+    title: "Thirty Days of Tech Writing: The Honest Version",
     excerpt:
-      "Here’s how writing every day changed my thinking, my reach, and how I now plan content...",
-    cover: "/img/writing.jpg",
-    url: "https://emmanuelao.hashnode.dev/30-day-content-challenge",
+      "I didn’t, like, map this whole thing out on a whiteboard or anything. It was more… me, one evening, staring into a half-cold cup of coffee thinking, eh, why not write and post something every single day for a month? And then — without even counting h...",
+    cover: "/img/writing.png",
+    url: "https://emmanuelao.hashnode.dev/thirty-days-of-tech-writing-the-honest-version",
   },
   {
     title: "How to Build an API Project from Scratch (with GitHub Commits)",
