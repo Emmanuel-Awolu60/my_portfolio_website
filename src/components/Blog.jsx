@@ -7,9 +7,9 @@ const blogPosts = [
     title:
       "Mastering Backends with Python: the things I wish someone told me sooner",
     excerpt:
-      "I walk you through what I learned building APIs from scratch with Python and real lessons that changed my workflow...",
+      "I didn’t plan to learn backend development. I just wanted my little web app to “remember stuff.” Next thing I knew, I was neck-deep in APIs, HTTP status codes, and wondering why my database kept vanishing. If the word backend sounds mysterious — like...",
     cover: "/img/python.png",
-    url: "https://emmanuelao.hashnode.dev/mastering-backend-with-python",
+    url: "https://emmanuelao.hashnode.dev/mastering-backends-with-python-the-things-i-wish-someone-told-me-sooner",
   },
   {
     title:
@@ -17,7 +17,7 @@ const blogPosts = [
     excerpt:
       "When you say “developer tools,” people picture the same greatest-hits lineup — VS Code, GitHub, maybe Postman if you’re feeling like living dangerously. And fair enough, they’re essential. But honestly? Once you start coding every day, you realize yo...",
     cover: "/img/tools.jpg",
-    url: "https://emmanuelao.hashnode.dev/underrated-dev-tools",
+    url: "https://emmanuelao.hashnode.dev/10-developer-tools-i-couldnt-work-without-that-hardly-anyone-talks-about",
   },
   {
     title: "My 30-Day Tech Content Challenge: Lessons from Writing Daily",
