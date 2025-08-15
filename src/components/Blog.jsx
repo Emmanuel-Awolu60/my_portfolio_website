@@ -4,16 +4,18 @@ import { motion } from "framer-motion";
 
 const blogPosts = [
   {
-    title: "Mastering Backend with Python: What I Wish I Knew Earlier",
+    title:
+      "Mastering Backends with Python: the things I wish someone told me sooner",
     excerpt:
       "I walk you through what I learned building APIs from scratch with Python and real lessons that changed my workflow...",
-    cover: "/img/python.jpg",
+    cover: "/img/python.png",
     url: "https://emmanuelao.hashnode.dev/mastering-backend-with-python",
   },
   {
-    title: "10 Underrated Tools I Use Daily as a Developer",
+    title:
+      "10 Developer Tools I Couldn’t Work Without (That Hardly Anyone Talks About)",
     excerpt:
-      "Beyond VS Code and GitHub, these are tools I can’t live without when building or writing code...",
+      "When you say “developer tools,” people picture the same greatest-hits lineup — VS Code, GitHub, maybe Postman if you’re feeling like living dangerously. And fair enough, they’re essential. But honestly? Once you start coding every day, you realize yo...",
     cover: "/img/tools.jpg",
     url: "https://emmanuelao.hashnode.dev/underrated-dev-tools",
   },

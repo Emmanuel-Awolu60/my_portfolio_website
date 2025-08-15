@@ -16,10 +16,10 @@ const projects = [
     live: "#",
   },
   {
-    title: "DevNotes",
+    title: "Food Plug",
     description:
       "We offer 6 delicious, from basic cheese and basil and pizza ($6) to our signature classic pizzeria ('Taverne').....",
-    tech: "React, Tailwind, Firebase",
+    tech: "HTML, CSS, JS",
     github: "https://github.com/Emmanuel-Awolu60/devnotes",
     live: "https://dx1-foodplug.netlify.app/",
   },

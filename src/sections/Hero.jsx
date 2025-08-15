@@ -1,6 +1,6 @@
 import React from "react";
 import FadeInSection from "../components/FadeInSection";
-
+import "./AnimatedBorder.css"; 
 export default function Hero() {
   return (
     <section
@@ -48,14 +48,24 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
           > */}
-          <FadeInSection delay={0.2}>
+
+      <FadeInSection delay={0.2}>
+        <div className="relative w-fit rounded-xl animated-border-wrapper border-blue-600">
+          <img
+            src="/img/hero.jpg"
+            alt="Profile"
+            className="w-auto md:w-96 md:h-96 object-cover rounded-xl z-10 relative shadow-2xl border-4 border-transparent"
+          />
+        </div>
+      </FadeInSection>
+          {/* <FadeInSection delay={0.2}>
             <img
               // src="https://avatars.githubusercontent.com/u/9919?v=4"
               src="/img/hero.jpg"
               alt="Profile"
               className="w-auto md:w-96 md:h-96 object-cover rounded-xl shadow-2xl border-4 border-blue-600"
             />
-          </FadeInSection>
+          </FadeInSection> */}
           {/* </a> */}
         </div>
       </div>
