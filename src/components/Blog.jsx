@@ -27,11 +27,12 @@ const blogPosts = [
     url: "https://emmanuelao.hashnode.dev/thirty-days-of-tech-writing-the-honest-version",
   },
   {
-    title: "How to Build an API Project from Scratch (with GitHub Commits)",
+    title:
+      "How I Built My First API (and Why My GitHub History Looks Like a Diary)",
     excerpt:
-      "I broke down every commit while building my Link Tracking API, so you can follow and learn easily...",
-    cover: "/img/api.jpg",
-    url: "https://emmanuelao.hashnode.dev/build-api-from-scratch",
+      "At some point, every beginner coder hits the same wall: 'Okay… I can build a calculator. Now what?' For me, the next step was an API. Why? Because APIs are like the secret tunnels of the internet — invisible to most people but absolutely essential fo...",
+    cover: "/img/api.png",
+    url: "https://emmanuelao.hashnode.dev/how-i-built-my-first-api-and-why-my-github-history-looks-like-a-diary",
   },
 ];
 
