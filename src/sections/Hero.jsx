@@ -1,6 +1,7 @@
 import React from "react";
 import FadeInSection from "../components/FadeInSection";
-import "./AnimatedBorder.css"; 
+import "./AnimatedBorder.css";
+
 export default function Hero() {
   return (
     <section
@@ -11,20 +12,20 @@ export default function Hero() {
         {/* Left: Text */}
         <FadeInSection>
           <div
-            className="space-y-6"
+            className="space-y-6 text-center md:text-left"
             data-aos="fade-right"
             data-aos-duration="1000"
           >
             <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white">
               👋Hi, I’m{" "}
               <span className="text-blue-600 dark:text-blue-400">
-                Emmanuel AO
+                Great Emmanuel
               </span>
             </h1>
             <h2 className="text-2xl sm:text-3xl font-semibold text-gray-700 dark:text-gray-300">
               Full-Stack Web Developer
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-xl">
+            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-xl mx-auto md:mx-0">
               I build fast, responsive, and modern web applications using
               React.js, Tailwind.css, Node.js, Express, TypeScript and Python. I
               care deeply about clean code and good UI.
@@ -37,36 +38,20 @@ export default function Hero() {
             </a>
           </div>
         </FadeInSection>
-        {/* Right: Image */}
+
+        {/* Right: Animated Image */}
         <div
           className="flex justify-center md:justify-end"
           data-aos="fade-left"
           data-aos-duration="1000"
         >
-          {/* <a
-            href="https://github.com/Emmanuel-Awolu60"
-            target="_blank"
-            rel="noopener noreferrer"
-          > */}
-
-      <FadeInSection delay={0.2}>
-        <div className="relative w-fit rounded-xl animated-border-wrapper border-blue-600">
-          <img
-            src="/img/hero.jpg"
-            alt="Profile"
-            className="w-auto md:w-96 md:h-96 object-cover rounded-xl z-10 relative shadow-2xl border-4 border-transparent"
-          />
-        </div>
-      </FadeInSection>
-          {/* <FadeInSection delay={0.2}>
+          <FadeInSection delay={0.2}>
             <img
-              // src="https://avatars.githubusercontent.com/u/9919?v=4"
               src="/img/hero.jpg"
               alt="Profile"
-              className="w-auto md:w-96 md:h-96 object-cover rounded-xl shadow-2xl border-4 border-blue-600"
+              className="w-56 h-56 sm:w-72 sm:h-72 md:w-96 md:h-96 object-cover shadow-2xl border-4 border-blue-600 animated-blob"
             />
-          </FadeInSection> */}
-          {/* </a> */}
+          </FadeInSection>
         </div>
       </div>
     </section>

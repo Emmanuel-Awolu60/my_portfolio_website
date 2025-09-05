@@ -1,32 +1,18 @@
-.animated-border-wrapper::before {
-    content: "";
-    position: absolute;
-    inset: -4px;
-    border-radius: 0.75rem;
-    /* matches Tailwind's rounded-xl */ 
-    background: linear-gradient(45deg, #3b82f6, #301fc9, #3b82f6);
-    background-size: 300% 300%;
-    animation: borderMotion 4s linear infinite;
-    z-index: 0;
-    padding: 6px;
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    /* border: 5px solid tomato; */
-}
-
-@keyframes borderMotion {
+@keyframes morph {
     0% {
-        background-position: 0% 50%;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
 
     50% {
-        background-position: 100% 50%;
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
     }
 
     100% {
-        background-position: 0% 50%;
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     }
+}
+
+.animated-blob {
+    animation: morph 10s ease-in-out infinite;
+    transition: all 0.3s ease-in-out;
 }
