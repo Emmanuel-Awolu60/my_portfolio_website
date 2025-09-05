@@ -17,10 +17,10 @@ export default function Hero() {
             data-aos="fade-right"
             data-aos-duration="1000"
           >
-            <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white">
+            <h1 className="text-4xl sm:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white">
               👋Hi, I’m{" "}
               <span className="text-blue-600 dark:text-blue-400">
-                Emmanuel AO
+                Great Emmanuel
               </span>
             </h1>
 
