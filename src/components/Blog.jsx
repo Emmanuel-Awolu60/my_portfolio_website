@@ -7,7 +7,7 @@ const blogPosts = [
     title:
       "Mastering Backends with Python: the things I wish someone told me sooner",
     excerpt:
-      "I didn’t plan to learn backend development. I just wanted my little web app to “remember stuff.” Next thing I knew, I was neck-deep in APIs, HTTP status codes, and wondering why my database kept vanishing. If the word backend sounds mysterious — like...",
+      "I didn’t plan to learn backend development. I just wanted my little web app to “remember stuff.” Next thing I knew, I was neck-deep in APIs, HTTP status codes, and wondering why my database kept vanishing. If the word backend sounds mysterious like...",
     cover: "/img/python.png",
     url: "https://emmanuelao.hashnode.dev/mastering-backends-with-python-the-things-i-wish-someone-told-me-sooner",
   },
@@ -15,14 +15,14 @@ const blogPosts = [
     title:
       "10 Developer Tools I Couldn’t Work Without (That Hardly Anyone Talks About)",
     excerpt:
-      "When you say “developer tools,” people picture the same greatest-hits lineup — VS Code, GitHub, maybe Postman if you’re feeling like living dangerously. And fair enough, they’re essential. But honestly? Once you start coding every day, you realize yo...",
+      "When you say “developer tools,” people picture the same greatest-hits lineup VS Code, GitHub, maybe Postman if you’re feeling like living dangerously. And fair enough, they’re essential. But honestly? Once you start coding every day, you realize yo...",
     cover: "/img/tools.jpg",
     url: "https://emmanuelao.hashnode.dev/10-developer-tools-i-couldnt-work-without-that-hardly-anyone-talks-about",
   },
   {
     title: "Thirty Days of Tech Writing: The Honest Version",
     excerpt:
-      "I didn’t, like, map this whole thing out on a whiteboard or anything. It was more… me, one evening, staring into a half-cold cup of coffee thinking, eh, why not write and post something every single day for a month? And then — without even counting h...",
+      "I didn’t, like, map this whole thing out on a whiteboard or anything. It was more… me, one evening, staring into a half-cold cup of coffee thinking, eh, why not write and post something every single day for a month? And then without even counting h...",
     cover: "/img/writing.png",
     url: "https://emmanuelao.hashnode.dev/thirty-days-of-tech-writing-the-honest-version",
   },
@@ -30,7 +30,7 @@ const blogPosts = [
     title:
       "How I Built My First API (and Why My GitHub History Looks Like a Diary)",
     excerpt:
-      "At some point, every beginner coder hits the same wall: 'Okay… I can build a calculator. Now what?' For me, the next step was an API. Why? Because APIs are like the secret tunnels of the internet — invisible to most people but absolutely essential fo...",
+      "At some point, every beginner coder hits the same wall: 'Okay… I can build a calculator. Now what?' For me, the next step was an API. Why? Because APIs are like the secret tunnels of the internet invisible to most people but absolutely essential fo...",
     cover: "/img/api.png",
     url: "https://emmanuelao.hashnode.dev/how-i-built-my-first-api-and-why-my-github-history-looks-like-a-diary",
   },

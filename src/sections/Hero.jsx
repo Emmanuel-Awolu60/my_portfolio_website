@@ -1,5 +1,6 @@
 import React from "react";
 import FadeInSection from "../components/FadeInSection";
+import { ReactTyped } from "react-typed"; // <-- fixed import
 import "./AnimatedBorder.css";
 
 export default function Hero() {
@@ -19,17 +20,32 @@ export default function Hero() {
             <h1 className="text-5xl sm:text-6xl font-extrabold leading-tight text-gray-900 dark:text-white">
               👋Hi, I’m{" "}
               <span className="text-blue-600 dark:text-blue-400">
-                Great Emmanuel
+                Emmanuel AO
               </span>
             </h1>
+
+            {/* Typing Effect */}
             <h2 className="text-2xl sm:text-3xl font-semibold text-gray-700 dark:text-gray-300">
-              Full-Stack Web Developer
+              <ReactTyped
+                strings={[
+                  "Full-Stack Web Developer",
+                  "Backend Engineer",
+                  "Tech Writer",
+                  "Creative Problem Solver",
+                ]}
+                typeSpeed={60}
+                backSpeed={40}
+                backDelay={1500}
+                loop
+              />
             </h2>
+
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-xl mx-auto md:mx-0">
               I build fast, responsive, and modern web applications using
               React.js, Tailwind.css, Node.js, Express, TypeScript and Python. I
               care deeply about clean code and good UI.
             </p>
+
             <a
               href="#projects"
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition transform hover:scale-105 text-lg font-medium"
