@@ -24,7 +24,6 @@ export default function Hero() {
               </span>
             </h1>
 
-            {/* Typing Effect */}
             <h2 className="text-2xl sm:text-3xl font-semibold text-gray-700 dark:text-gray-300">
               <ReactTyped
                 strings={[
@@ -33,10 +32,10 @@ export default function Hero() {
                   "Tech Writer",
                   "Creative Problem Solver",
                 ]}
-                typeSpeed={60}
-                backSpeed={40}
-                backDelay={1500}
-                loop
+                typeSpeed={60} // typing speed
+                backSpeed={40} // backspace speed
+                backDelay={1500} // pause before deleting
+                loop // keep looping
               />
             </h2>
 
