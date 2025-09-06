@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
 import Hero from "./sections/Hero";
 import Navbar from "./components/Navbar";
@@ -15,34 +15,31 @@ import FAQ from "./components/FAQ";
 import SidebarNav from "./components/SidebarNav";
 
 function App() {
-  const [showContent, setShowContent] = useState(false);
+  // const [showContent, setShowContent] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => setShowContent(true), 2000);
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => setShowContent(true), 2000);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <>
-      {!showContent ? (
+      {/* {!showContent ? (
         <Preloader />
-      ) : (
-        <div className="bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-100 min-h-screen">
-          {/* <SidebarNav /> */}
-          <Navbar />
-          <main className="pt-20">
-            <Hero />
-            <About />
-            <Services />
-            <Projects />
-            {/* <Skills /> */}
-            <Blog />
-            <FAQ />
-            <Contact />
-            <Footer />
-          </main>
-        </div>
-      )}
+      ) : ( */}
+      <div className="bg-white dark:bg-gray-950 text-gray-800 dark:text-gray-100 min-h-screen">
+        <Navbar />
+        <main className="pt-20">
+          <Hero />
+          <About />
+          <Services />
+          <Projects />
+          <Blog />
+          <FAQ />
+          <Contact />
+          <Footer />
+        </main>
+      </div>
     </>
   );
 }
