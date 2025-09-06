@@ -81,8 +81,7 @@ export default function Hero() {
               <ReactTyped
                 strings={[
                   "Full-Stack Web Developer",
-                  "Backend Engineer",
-                  "Tech Writer",
+                  "Technical Writer",
                   "Creative Problem Solver",
                 ]}
                 typeSpeed={60}
