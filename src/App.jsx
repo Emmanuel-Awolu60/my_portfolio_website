@@ -12,7 +12,7 @@ import Blog from "./components/Blog";
 import Footer from "./components/Footer";
 import Preloader from "./components/Preloader";
 import FAQ from "./components/FAQ";
-import SidebarNav from "./components/SidebarNav"
+import SidebarNav from "./components/SidebarNav";
 
 function App() {
   const [showContent, setShowContent] = useState(false);
@@ -35,7 +35,7 @@ function App() {
             <About />
             <Services />
             <Projects />
-            <Skills />
+            {/* <Skills /> */}
             <Blog />
             <FAQ />
             <Contact />
