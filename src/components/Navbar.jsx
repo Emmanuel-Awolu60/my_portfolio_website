@@ -109,7 +109,7 @@ export default function Navbar() {
             >
               <FaCode className="text-white w-5 h-5" />
               <motion.div
-                className="absolute inset-0 rounded-xl bg-gradient-to-br from-purple-600 to-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                // className="absolute inset-0 rounded-xl bg-gradient-to-br from-purple-600 to-cyan-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 layoutId="logo-bg"
               />
             </motion.div>
