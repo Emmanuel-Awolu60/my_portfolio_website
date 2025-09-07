@@ -116,7 +116,7 @@ const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [showAll, setShowAll] = useState(false);
   const [viewMode, setViewMode] = useState("grid"); // grid or list
-  const [hoveredProject, setHoveredProject] = useState(null);
+  // const [hoveredProject, setHoveredProject] = useState(null);
 
   const filteredProjects = projects.filter(
     (project) => activeCategory === "All" || project.category === activeCategory
@@ -125,7 +125,7 @@ const Projects = () => {
   const displayedProjects = showAll
     ? filteredProjects
     : filteredProjects.slice(0, 4);
-  const featuredProjects = projects.filter((p) => p.featured);
+  // const featuredProjects = projects.filter((p) => p.featured);
 
   return (
     <section className="relative py-32 bg-gradient-to-br from-slate-50 via-white to-blue-50 dark:from-gray-950 dark:via-gray-900 dark:to-blue-950 overflow-hidden">
@@ -252,8 +252,8 @@ const Projects = () => {
           {displayedProjects.map((project, index) => (
             <div
               key={project.id}
-              onMouseEnter={() => setHoveredProject(project.id)}
-              onMouseLeave={() => setHoveredProject(null)}
+              // onMouseEnter={() => setHoveredProject(project.id)}
+              // onMouseLeave={() => setHoveredProject(null)}
               className={`group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-3xl overflow-hidden border border-gray-200/50 dark:border-gray-700/50 hover:border-blue-300/50 dark:hover:border-blue-600/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10 hover:-translate-y-2 ${
                 viewMode === "list" ? "flex gap-6 p-6" : ""
               }`}
